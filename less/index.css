@@ -14,6 +14,7 @@ h6,
 p,
 blockquote,
 pre,
+figure,
 a,
 abbr,
 acronym,
@@ -54,9 +55,65 @@ caption {
   border: 0;
   outline: 0;
 }
+* {
+  color: #000;
+  font-family: "PingFang SC", monospace;
+  font-size: 14px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.direction-column {
+  flex-direction: column;
+}
+.direction-row {
+  flex-direction: row;
+}
+.btn {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 40px;
+  padding: 5px 10px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.btn-default {
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn-default-dark {
+  background-color: transparent;
+  border-color: #ccc;
+  color: #ccc;
+}
+.btn-danger {
+  background-color: #ecb14e;
+  border-color: #ecb14e;
+}
+.btn-primary {
+  background-color: #3ad1e0;
+  border-color: #3ad1e0;
+}
 header {
   height: 40px;
-  background: green;
+  background: #3ad1e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,14 +123,130 @@ header {
   background: pink;
   width: 200px;
 }
+nav {
+  display: flex;
+}
 nav .nav-item {
   color: #fff;
   padding: 5px 10px;
 }
-.btn {
-  background: transparent;
-  border: 1px solid #fff;
+.landing {
+  height: 500px;
+  background: #3ad1e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #fff;
-  border-radius: 40px;
-  padding: 5px 10px;
+}
+.landing .title {
+  font-size: 4em;
+  color: #fff;
+}
+.landing .desc {
+  color: #fff;
+}
+.landing .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.description .title {
+  font-size: 2em;
+  color: #000;
+}
+.description .desc {
+  color: #ccc;
+  width: 60%;
+  font-size: 0.8em;
+}
+.category .block {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.category .block figure {
+  height: 200px;
+  width: 200px;
+  background: pink;
+}
+.category .block .title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.category .block .desc {
+  color: #ccc;
+}
+.video {
+  height: 300px;
+  background: #efefef;
+}
+.video .title {
+  font-size: 2em;
+  color: #3ad1e0;
+}
+.video .desc {
+  color: #3ad1e0;
+}
+.example {
+  position: relative;
+}
+.example .title {
+  font-size: 2em;
+  color: #000;
+}
+.example .line:before {
+  content: "";
+  width: 80%;
+  left: 10%;
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  z-index: -1;
+}
+.example .desc {
+  width: 60%;
+  font-size: 0.8em;
+  color: #ccc;
+  margin: 0 20px;
+  padding: 0 10px;
+  background: #fff;
+}
+.example .desc span {
+  margin-right: 0.25em;
+}
+.example figure {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  margin: 0 10px;
+}
+.margin-vertical-large {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.margin-vertical-medium {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.margin-horizontal-large {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.margin-horizontal-medium {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-items {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
 }

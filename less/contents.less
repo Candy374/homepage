@@ -1,0 +1,115 @@
+.landing {
+  height: 500px;
+  background: @theme-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: @text-color-default;
+
+  .title {
+    font-size: 4em;
+    color: @text-color-default;
+  }
+
+  .desc {
+    color: @text-color-default;
+  }
+
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.description {
+  .title {
+    font-size: 2em;
+    color: @text-color-dark1;
+  }
+
+  .desc {
+    color: @text-color-dark5;
+    width: 60%;
+    font-size: 0.8em;
+  }
+}
+
+.category {
+  .block {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      height: 200px;
+      width: 200px;
+      background: pink;
+    }
+
+    .title {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .desc {
+      color: @text-color-dark5;
+    }
+  }
+}
+
+.video {
+  height: 300px;
+  background: #efefef;
+
+  .title {
+    font-size: 2em;
+    color: @theme-color;
+  }
+
+  .desc {
+    color: @theme-color;
+  }
+}
+
+.example {
+  position: relative;
+
+  .title {
+    font-size: 2em;
+    color: @text-color-dark1;
+  }
+
+  .line {
+    &:before {
+      content: "";
+      width: 80%;
+      left: 10%;
+      margin-top: 10px;
+      border-top: 1px solid @text-color-dark5;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .desc {
+    span {
+      margin-right: 0.25em;
+    }
+    width: 60%;
+    font-size: 0.8em;
+    color: @text-color-dark5;
+    margin: 0 20px;
+    padding: 0 10px;
+    background: #fff;
+  }
+
+  figure {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    margin: 0 10px;
+  }
+}
