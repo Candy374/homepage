@@ -27,12 +27,18 @@
   .title {
     font-size: 2em;
     color: @text-color-dark1;
+    width: 60%;
   }
 
   .desc {
     color: @text-color-dark5;
     width: 60%;
     font-size: 0.8em;
+  }
+
+  .time-line {
+    width: 60%;
+    margin: 10px 0;
   }
 }
 
@@ -159,5 +165,43 @@
 
   img {
     margin: 10px;
+  }
+}
+
+.advantage, .location {
+  .title {
+    font-size: 2em;
+    color: @text-color-dark1;
+    width: 60%;
+  }
+
+  .list {
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+
+    figure {
+      height: 100px;
+      width: 100px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-size: 1.5em;
+      margin: 10px 0;
+      width: inherit;
+    }
+
+    .desc {
+      color: @text-color-dark5;
+    }
   }
 }
