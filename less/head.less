@@ -1,14 +1,23 @@
 header {
   height: 40px;
-  background: @theme-color;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 10px;
 }
 
 .logo {
-  width: 200px;
+  img {
+    width: 200px;
+    filter: drop-shadow(225px 0 #fff);
+    border-right: 10px solid transparent;
+    position: relative;
+    left: -225px;
+  }
 }
 
 nav {

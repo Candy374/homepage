@@ -1,6 +1,32 @@
 /**
  * Created by huangling on 13/05/2017.
  */
+
+// Vue.component('my-header', {
+//     template: 'header',
+//     data: () => {
+//         return {
+//             logo: {
+//                 url: 'https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png'
+//             },
+//             nav: {
+//                 links: [{
+//                     label: '功能'
+//                 }, {
+//                     label: '我们'
+//                 }, {
+//                     label: '学堂'
+//                 }],
+//                 classes: 'nav-item'
+//             },
+//             login: {
+//                 label: '账号登录',
+//                 classes: 'btn btn-default'
+//             }
+//         }
+//     }
+// });
+
 new Vue({
     el: '#app',
     data: {
@@ -34,15 +60,5 @@ new Vue({
             }
         }
 
-    },
-    computed: {
-        compiledMarkdown: function () {
-            return this.input
-        }
-    },
-    methods: {
-        update: function (e) {
-            this.input = e.target.value
-        }
     }
 });

@@ -3,6 +3,38 @@ footer {
   flex-direction: column;
   background: @background-color;
   padding: 0 40px;
+  border-top: 1px solid @background-color-light-2;
+
+  .logo {
+    margin: 15px 0;
+    align-self: flex-start;
+
+    img {
+      filter: drop-shadow(145px 0 @text-color-dark5);
+      left: -165px;
+      width: 100px;
+      margin: 0 25px;
+    }
+  }
+
+  .contact {
+    margin-top: 20px;
+    align-self: flex-start;
+    div {
+      color: @text-color-dark5;
+    }
+
+    img {
+      width: 1em;
+      height: 1em;
+      margin-right: 1em;
+    }
+  }
+
+  .desc {
+    color: @text-color-dark5;
+    font-style: italic;
+  }
 
   .copyright {
     border-top: 1px solid @background-color-light-2;
@@ -26,7 +58,7 @@ footer {
     margin: 0 20px;
 
     .link {
-      color: @text-color-dark3;
+      color: @text-color-dark5;
 
       &:hover {
         color: @text-color-dark2;
