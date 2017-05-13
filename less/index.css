@@ -185,8 +185,8 @@ input::-webkit-input-placeholder {
   color: #4e6175;
 }
 .btn-danger {
-  background-color: #fc6921;
-  border-color: #fc6921;
+  background-color: #ff6900;
+  border-color: #ff6900;
 }
 .btn-primary {
   background-color: #25caca;
@@ -226,6 +226,10 @@ nav .nav-item {
   color: #fff;
   margin: 0;
   background: url(../assets/background.png) #25caca;
+  background-size: cover;
+}
+.landing.home-img {
+  background-image: url(../assets/home_img.png);
 }
 .landing .title {
   font-size: 3em;
@@ -294,7 +298,8 @@ nav .nav-item {
 }
 .video {
   height: 300px;
-  background: #efefef;
+  background: url(../assets/app_demo.png);
+  background-size: cover;
 }
 .video .title {
   font-size: 2em;
@@ -302,6 +307,10 @@ nav .nav-item {
 }
 .video .desc {
   color: #25caca;
+}
+.video figure {
+  width: 50px;
+  height: 50px;
 }
 .example {
   position: relative;
@@ -315,7 +324,7 @@ nav .nav-item {
   width: 80%;
   left: 10%;
   margin-top: 10px;
-  border-top: 1px solid #4e6175;
+  border-top: 1px solid #dde5ed;
   position: absolute;
   z-index: -1;
 }
@@ -329,12 +338,13 @@ nav .nav-item {
 }
 .example .desc span {
   margin-right: 0.25em;
+  color: #25caca;
 }
 .example figure {
   width: 100px;
   height: 100px;
-  background: pink;
   margin: 0 10px;
+  background: #efefef;
 }
 .try-now .block {
   width: 80%;
@@ -370,6 +380,14 @@ nav .nav-item {
   justify-content: space-around;
   flex-wrap: wrap;
   display: flex;
+}
+.try-now .logo-group figure {
+  width: inherit;
+  height: inherit;
+}
+.try-now .logo-group figure image {
+  width: inherit;
+  height: inherit;
 }
 .try-now img {
   margin: 10px;
