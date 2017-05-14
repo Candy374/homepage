@@ -16,7 +16,7 @@ config.plugins = [
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
         filename: './index.html',
-        template: path.resolve(__dirname, '../src/index.html'),
+        template: path.resolve(__dirname, '../src/js/index.html'),
         inject: true
     })
 ];

@@ -4,7 +4,7 @@
 
 import Vue from 'Vue';
 import Header from './components/header.vue';
-import './index.css';
+import '../less/index.css';
 
 Vue.config.debug = true;//开启错误提示
 window.onload = function () {

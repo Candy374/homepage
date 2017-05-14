@@ -5,11 +5,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         index: [
-            path.resolve(__dirname, '../src/index.js')
+            path.resolve(__dirname, '../src/js/index.js')
         ]
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../dist'),
         publicPath: './',
         filename: 'build.js',
     },
@@ -46,7 +46,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: './index.html',
-            template: path.resolve(__dirname, '../src/index.html'),
+            template: path.resolve(__dirname, '../src/js/index.html'),
             inject: true
         })
     ]
