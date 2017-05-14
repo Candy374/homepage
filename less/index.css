@@ -407,15 +407,18 @@ nav .nav-item {
 .advantage .block,
 .location .block {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  width: 50%;
+  width: 49%;
+  min-height: 150px;
+  padding-right: 1%;
 }
 .advantage .block figure,
 .location .block figure {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   margin-right: 20px;
+  margin-top: 15px;
   flex-shrink: 0;
 }
 .advantage .block .title,
@@ -427,6 +430,14 @@ nav .nav-item {
 .advantage .block .desc,
 .location .block .desc {
   color: #4e6175;
+}
+.location .block {
+  min-height: 100px;
+}
+.location .block figure {
+  width: 1em;
+  height: 1em;
+  margin-top: 25px;
 }
 footer {
   display: flex;

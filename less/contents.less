@@ -232,14 +232,17 @@
 
   .block {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 50%;
+    width: 49%;
+    min-height: 150px;
+    padding-right: 1%;
 
     figure {
-      height: 100px;
-      width: 100px;
+      height: 50px;
+      width: 50px;
       margin-right: 20px;
+      margin-top: 15px;
       flex-shrink: 0;
     }
 
@@ -251,6 +254,18 @@
 
     .desc {
       color: @text-color-dark5;
+    }
+  }
+}
+
+.location {
+  .block {
+    min-height: 100px;
+
+    figure {
+      width: 1em;
+      height: 1em;
+      margin-top: 25px;
     }
   }
 }
