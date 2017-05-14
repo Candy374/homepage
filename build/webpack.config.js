@@ -12,6 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, '../dist'),
         publicPath: './',
         filename: 'build.js',
+        chunkFilename: '[id].[chunkhash].js'
     },
     module: {
         loaders: [
@@ -27,6 +28,11 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader?modules'
+            },
+            {
+                test: /\.less$/,
+                loader: "style-loader!css-loader!less-loader",
+
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,

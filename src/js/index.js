@@ -1,29 +1,24 @@
 /**
  * Created by huangling on 14/05/2017.
  */
-
 import Vue from 'Vue';
-import Header from './components/header.vue';
-import '../less/index.css';
-
-Vue.config.debug = true;//开启错误提示
-window.onload = function () {
-    new Vue({
-        el: '#app',
-        components: {
-            'my-header': Header
-        },
-        data: {
-            contents: {
-                landing: {
-                    title: '让营销变得简单',
-                    desc: '企业一站式营销云'
-                },
-                apply: {
-                    label: '申请试用',
-                    classes: 'btn btn-danger'
-                }
-            }
-        }
-    });
+const NotFound = { template: '<p>Page not found</p>' }
+const Home = { template: '<p>home page</p>' }
+const About = { template: '<p>about page</p>' }
+const routes = {
+    '/': Home,
+    '/about': About
 };
+
+new Vue({
+    el: '#app',
+    data: {
+        currentRoute: window.location.pathname
+    },
+    computed: {
+        ViewComponent () {
+            return routes[this.currentRoute] || NotFound
+        }
+    },
+    render (h) { return h(this.ViewComponent) }
+});

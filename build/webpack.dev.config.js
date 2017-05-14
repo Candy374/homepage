@@ -9,6 +9,7 @@ var webpack = require('webpack');
 var config = require('./webpack.config');
 
 config.output.publicPath = '/';
+config.output.filename = '[name].[hash].js';
 
 config.plugins = [
     // new webpack.optimize.OccurenceOrderPlugin(),
@@ -20,6 +21,7 @@ config.plugins = [
         inject: true
     })
 ];
+
 
 // 动态向入口配置中注入 webpack-hot-middleware/client
 var devClient = './build/dev-client';

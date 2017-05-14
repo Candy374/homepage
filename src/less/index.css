@@ -192,31 +192,6 @@ input::-webkit-input-placeholder {
   background-color: #25caca;
   border-color: #25caca;
 }
-header {
-  height: 40px;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  left: 25px;
-  right: 25px;
-  top: 10px;
-}
-.logo img {
-  width: 200px;
-  filter: drop-shadow(225px 0 #fff);
-  border-right: 10px solid transparent;
-  position: relative;
-  left: -225px;
-}
-nav {
-  display: flex;
-}
-nav .nav-item {
-  color: #fff;
-  padding: 5px 10px;
-}
 .landing {
   height: 500px;
   display: flex;
@@ -255,20 +230,6 @@ nav .nav-item {
 .landing .block .title {
   font-size: 1.5em;
   padding-left: 1em;
-}
-.description .title {
-  font-size: 2em;
-  color: #000;
-  width: 60%;
-}
-.description .desc {
-  color: #4e6175;
-  width: 60%;
-  font-size: 0.8em;
-}
-.description .time-line {
-  width: 60%;
-  margin: 10px 0;
 }
 .figure figure {
   width: 60%;
@@ -438,63 +399,6 @@ nav .nav-item {
   width: 1em;
   height: 1em;
   margin-top: 25px;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  background: #efefef;
-  padding: 0 40px;
-  border-top: 1px solid #dde5ed;
-}
-footer .logo {
-  margin: 15px 0;
-  align-self: flex-start;
-}
-footer .logo img {
-  filter: drop-shadow(145px 0 #4e6175);
-  left: -165px;
-  width: 100px;
-  margin: 0 25px;
-}
-footer .contact {
-  margin-top: 20px;
-  align-self: flex-start;
-}
-footer .contact div {
-  color: #4e6175;
-}
-footer .contact img {
-  width: 1em;
-  height: 1em;
-  margin-right: 1em;
-}
-footer .desc {
-  color: #4e6175;
-  font-style: italic;
-}
-footer .copyright {
-  border-top: 1px solid #dde5ed;
-  display: flex;
-  padding: 20px 0;
-}
-footer .copyright address {
-  margin-right: 40px;
-  color: #4e6175;
-  font-style: normal;
-}
-footer .copyright span {
-  color: #4e6175;
-}
-footer .block {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-}
-footer .block .link {
-  color: #4e6175;
-}
-footer .block .link:hover {
-  color: #333;
 }
 .margin-vertical-large {
   margin-top: 40px;

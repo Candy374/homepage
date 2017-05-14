@@ -2,7 +2,7 @@
  * Created by huangling on 13/05/2017.
  */
 import Vue from 'vue';
-import Header from './templates/header.vue';
+import Header from './templates/Header.vue';
 
 // Vue.component('my-header', {
 //     template: '#header',

@@ -4,7 +4,7 @@
 <template id="header">
     <header>
         <div class="logo">
-            <img :src="logo.url">
+            <img src="../../assets/logo.png"/>
         </div>
         <nav id="nav">
             <a :class="nav.classes" v-for="link in nav.links">{{ link.label }}</a>
@@ -17,9 +17,6 @@
     export default {
         data: () => {
             return {
-                logo: {
-                    url: '../assets/logo.png'
-                },
                 nav: {
                     links: [{
                         label: '功能'
@@ -38,3 +35,36 @@
         }
     }
 </script>
+
+<style lang="less">
+    header {
+        height: 40px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        top: 10px;
+    }
+
+    .logo {
+        img {
+            width: 200px;
+            filter: drop-shadow(225px 0 #fff);
+            border-right: 10px solid transparent;
+            position: relative;
+            left: -225px;
+        }
+    }
+
+    nav {
+        display: flex;
+
+        .nav-item {
+            color: #fff;
+            padding: 5px 10px;
+        }
+    }
+</style>
