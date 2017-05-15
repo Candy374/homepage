@@ -6,8 +6,7 @@
         <div class="row justify-between">
             <div class="row">
                 <div class="logo">
-                    <img src="../../assets/logo.png"/>
-                    <div class="desc">{{ logoDesc }}</div>
+                    <img src="../../assets/logo_footer.png"/>
                 </div>
                 <div class="row align-start">
                     <div class="block" v-for="column in links">
@@ -35,7 +34,6 @@
     export default {
         data: () => {
             return {
-                logoDesc: '让营销变得简单!',
                 links: [
                     [{
                         label: '首页',
@@ -94,10 +92,7 @@
             align-self: flex-start;
 
             img {
-                filter: drop-shadow(145px 0 @text-color-dark5);
-                left: -165px;
                 width: 100px;
-                margin: 0 25px;
             }
         }
 

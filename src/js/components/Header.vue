@@ -3,13 +3,15 @@
 */
 <template id="header">
     <header>
-        <div class="logo">
-            <img src="../../assets/logo.png"/>
+        <div>
+            <div class="logo">
+                <img src="../../assets/logo.png"/>
+            </div>
+            <nav id="nav">
+                <a :class="nav.classes" v-for="link in nav.links">{{ link.label }}</a>
+                <button :class="login.classes">{{ login.label}}</button>
+            </nav>
         </div>
-        <nav id="nav">
-            <a :class="nav.classes" v-for="link in nav.links">{{ link.label }}</a>
-            <button :class="login.classes">{{ login.label}}</button>
-        </nav>
     </header>
 </template>
 
@@ -39,23 +41,25 @@
 <style lang="less">
     header {
         height: 40px;
-        background: transparent;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
+        position: fixed;
         left: 25px;
         right: 25px;
         top: 10px;
+        z-index: 1;
+
+        & > div {
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
     }
 
     .logo {
         img {
-            width: 200px;
-            filter: drop-shadow(225px 0 #fff);
-            border-right: 10px solid transparent;
-            position: relative;
-            left: -225px;
+            width: 120px;
         }
     }
 

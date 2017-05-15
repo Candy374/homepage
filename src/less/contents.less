@@ -1,16 +1,25 @@
 .landing {
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: @text-color-default;
-  margin: 0;
-  background: url(../assets/background.png) @theme-color;
-  background-size: cover;
+  background: url(../assets/background.png) @theme-color center;
+  background-size: contain;
+  width: 100%;
+  max-width: inherit;
+  margin-top: 0;
+  position: relative;
 
-  &.home-img {
-    background-image: url(../assets/home_img.png);
+  img {
+    position: absolute;
+    bottom: -2px;
+    max-width: 1440px;
+
+    @media screen and (max-width: 1440px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+      max-width: 100%;
+    }
   }
 
   .title {
@@ -45,24 +54,24 @@
   }
 }
 
-//.description {
-//  .title {
-//    font-size: 2em;
-//    color: @text-color-dark1;
-//    width: 60%;
-//  }
-//
-//  .desc {
-//    color: @text-color-dark5;
-//    width: 60%;
-//    font-size: 0.8em;
-//  }
-//
-//  .time-line {
-//    width: 60%;
-//    margin: 10px 0;
-//  }
-//}
+.description {
+  .title {
+    font-size: 2em;
+    color: @text-color-dark1;
+    width: 60%;
+  }
+
+  .desc {
+    color: @text-color-dark5;
+    width: 60%;
+    font-size: 0.8em;
+  }
+
+  .time-line {
+    width: 60%;
+    margin: 10px 0;
+  }
+}
 
 .figure {
   figure {
